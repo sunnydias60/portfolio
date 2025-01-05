@@ -1,0 +1,109 @@
+.achievement__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.achievement__pulication {
+    text-align: center;
+}
+
+.pulication__item {
+    margin-top: 0.5rem;
+    background: var(--color-bg-variant);
+    padding: 0.7rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.pulication__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.pulication__item p {
+    margin: 0.3rem 0 1rem;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.pulication__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.achievement__certification {
+    text-align: center;
+}
+
+.certification__content {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+.achievement__appreciation {
+    text-align: center;
+}
+
+.appreciation__item {
+    margin-top: 0.5rem;
+    background: var(--color-bg-variant);
+    padding: 0.7rem;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.appreciation__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+}
+
+.appreciation__item p {
+    margin: 0.3rem 0 1rem;
+    /* text-align: justify; */
+    font-size: 0.8rem;
+}
+
+.appreciation__item-cta {
+    display: flex;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.achievement__other {
+    text-align: center;
+}
+
+.other__content {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    text-align: center;
+}
+
+/* medium devices */
+
+@media screen and (max-width: 1024px) {
+    .achievement__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* small devices */
+
+@media screen and (max-width: 600px) {
+    .achievement__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+}

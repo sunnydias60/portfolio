@@ -1,0 +1,47 @@
+.experience__container {
+    display: grid;
+    grid-template-columns: 48.3% 0.4% 48.3%;
+    gap: 2%;
+}
+
+.line {
+    border-left: 3px solid var(--color-primary);
+    text-align: center;
+    margin-top: 15%;
+}
+
+.experience__professional,
+.experience__internship {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+    align-self: flex-start;
+}
+
+/* medium devices */
+
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 70%;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .line {
+        display: none;
+    }
+}
+
+/* small devices */
+
+@media screen and (max-width: 600px) {
+    .experience__container {
+        grid-template-columns: 100%;
+        gap: 4rem;
+    }
+
+    .line {
+        display: none;
+    }
+}

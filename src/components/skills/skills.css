@@ -1,0 +1,28 @@
+.skill__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+
+/* medium devices */
+
+@media screen and (max-width: 1024px) {
+    .skill__container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .skill {
+        height: auto;
+    }
+}
+
+/* small devices */
+
+@media screen and (max-width: 600px) {
+    .skill__container {
+        grid-template-columns: 48% 55%;
+        gap: 0.5rem;
+    }
+}
