@@ -28,7 +28,7 @@ const Header = () => {
         <a href="#"><img src={LOGO} className="logo" alt="LOGO" /></a>
         <h4>Hello, I am</h4>
         <h1>Sunny Dias</h1>
-        <h5 className="text-light">IT Engineer | Developer | CloudOps</h5>
+        <h5 className="text-light">IT Engineer | Full Stack Developer | Cloud Operation | Business Analyst</h5>
         <div className="cta">
           <CustomButton type="two" link={RESUME} text="Download CV" />
           <CustomButton type="one" link="#contact" target="no" text="Lets Talk" />
