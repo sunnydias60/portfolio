@@ -66,7 +66,7 @@ const Experience = () => {
           {
             intership.map(({ index, date, position, company, location, points_items }) => {
               return (
-                <Card type="two" key={index} date={date} position={position} company={company} location={location} points_items={points_items} />
+                <Card type="five" key={index} date={date} position={position} company={company} location={location} points_items={points_items} />
               )
             })
           }
