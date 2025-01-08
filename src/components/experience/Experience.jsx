@@ -4,7 +4,7 @@ import { Card } from '../card/Card'
 
 const intership = [
   {
-    date: 'August 2020-October 2020',
+    date: 'August 2020 - October 2020',
     position: 'Web Development Intern',
     company: 'TECHNOCOLABS',
     location: 'Indore, MP',
@@ -15,7 +15,7 @@ const intership = [
     ]
   },
   {
-    date: 'November 2020-February 2021',
+    date: 'November 2020 - February 2021',
     position: 'Website & Web App Development Intern',
     company: 'RC Diamonds',
     location: 'Rajkot, Gujarat',
@@ -29,7 +29,7 @@ const intership = [
 
 const professional = [
   {
-    date: 'January 2021- May 2021',
+    date: 'January 2021 - May 2021',
     position: 'Junior Developer',
     company: 'Clarus Info Solutions',
     location: 'Mumbai, Maharashtra',
@@ -40,8 +40,8 @@ const professional = [
     ]
   },
   {
-    date: 'June 2021- Present',
-    position: 'Application Development Associate',
+    date: 'June 2021 - August 2023',
+    position: 'Data Engineering Analyst',
     company: 'Accenture',
     location: 'Mumbai, Maharashtra',
     points_items: [
@@ -78,7 +78,7 @@ const Experience = () => {
           {
             professional.map(({ index, date, position, company, location, points_items }) => {
               return (
-                <Card type="two" key={index} date={date} position={position} company={company} location={location} points_items={points_items} />
+                <Card type="five" key={index} date={date} position={position} company={company} location={location} points_items={points_items} />
               )
             })
           }

@@ -193,6 +193,108 @@
     color: var(--color-bg-variant);
 }
 
+/* card four  */
+
+.card__four {
+    padding: 0.3rem;
+    border-radius: 2rem;
+    border: 2px solid var(--color-primary-variant);
+    transition: var(--transition);
+    background: transparent;
+}
+
+.card__four:hover {
+    background-color: black;
+}
+
+.card__four-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__four h3 {
+    margin: 0.5rem 0 0.5rem;
+}
+
+.card__four-cta {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+/* card five  */
+.card__five-container {
+    perspective: 1000px; /* Adds depth for the 3D flip effect */
+    display: inline-block;
+    margin: 10px;
+}
+
+.card__five {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform-style: preserve-3d; /* Enables 3D effect */
+    transition: transform 0.5s;
+    width: 100%;
+    height: auto;
+    min-height: 200px; /* Ensures responsiveness */
+    /* overflow: hidden; */
+}
+
+.card__five-container.flipped .card__five {
+    transform: rotateY(180deg); /* Flip on hover */
+}
+
+.card__five-front {
+    position: absolute;
+    background: var(--color-primary-variant);
+    text-align: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex; /* Enables flexbox */
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden; /* Hides the back of the card when flipped */
+}
+
+.card__five-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg); /* Rotate back side to be initially hidden */ 
+    background: var(--color-bg-variant);
+    text-align: center;   
+    display: flex; /* Enables flexbox */
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden; /* Hides the back of the card when flipped */
+}
+
+.card__five-back small {
+    font-size: 0.8rem;
+}
+
+.card__five-back ul {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.card__five-back li {
+    margin-right: 3px;
+    padding-left: 3px;
+    list-style-type: disc;
+}
+
 @media screen and (max-width: 1024px) {}
 
 /* small devices */
@@ -200,7 +302,6 @@
 @media screen and (max-width: 600px) {
     .card__two-date {
         width: 70%;
-
     }
 
     .card__two-position {
@@ -238,92 +339,17 @@
         font-size: 11px;
     }
 
+    /* .card__five  {
+        width: 100%;
+    } */
 
-}
+    .card__five {
+        width: 100%; /* Adjust width */
+        height: 250px;
+    }
 
-/* card four  */
-
-.card__four {
-    padding: 0.3rem;
-    border-radius: 2rem;
-    border: 2px solid var(--color-primary-variant);
-    transition: var(--transition);
-    background: transparent;
-}
-
-.card__four:hover {
-    background-color: black;
-}
-
-.card__four-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card__four h3 {
-    margin: 0.5rem 0 0.5rem;
-}
-
-.card__four-cta {
-    display: flex;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
-    justify-content: center;
-}
-
-/* card five  */
-.flip-card-container {
-    perspective: 1000px; /* Adds depth for the 3D flip effect */
-    display: inline-block;
-    margin: 10px;
-}
-
-.flip-card {
-    width: 300px;
-    height: 400px;
-    transform-style: preserve-3d; /* Enables 3D effect */
-    transition: transform 0.5s;
-}
-
-.flip-card-container.flipped .flip-card {
-    transform: rotateY(180deg); /* Flip on hover */
-}
-
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden; /* Hides the back of the card when flipped */
-}
-
-.flip-card-front {
-    background-color: #fff;
-    color: #333;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.flip-card-back {
-    background-color: #f2f2f2;
-    color: #333;
-    padding: 20px;
-    text-align: left;
-    transform: rotateY(180deg); /* Rotate back side to be initially hidden */
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.flip-card-back ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.flip-card-back li {
-    margin-bottom: 10px;
+    .card__five-front {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }

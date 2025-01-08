@@ -91,30 +91,31 @@ export const Card = ({ type, heading, icon, points_items, date, position, compan
     }
     else if (type === "five") {
         return (
-            <article className="card__five">
             <div
-                className={`flip-card-container ${isFlipped ? "flipped" : ""}`}
+                className={`card__five-container ${isFlipped ? "flipped" : ""}`}
                 onMouseEnter={toggleFlip}
                 onMouseLeave={toggleFlip}
             >
-            <div className="flip-card">
+                <article className="card__five">
                 {/* Front of the card */}
-                <div className="flip-card-front">
-                    <h2>{company}</h2>
-                    <p>Role: {position}</p>
-                    <p>Duration: {date}</p>
-                </div>
-                {/* Back of the card */}
-                <div className="flip-card-back">
-                    <ul>
-                        {points_items.map((task, index) => (
-                            <li key={index}>{task}</li>
-                        ))}
-                    </ul>
-                </div>
+                    <div className="card__five-front">
+                        <h2>{position}</h2>
+                        <br />
+                        <h3>{company}</h3>
+                        <h4>{date}</h4>
+                    </div>
+                    {/* Back of the card */}
+                    <div className="card__five-back">
+                        <small>
+                            <ul>
+                            {points_items.map((task, index) => (
+                                <li key={index}>{task}</li>
+                            ))}
+                        </ul>
+                        </small>      
+                    </div>
+                </article>
             </div>
-            </div>
-            </article>
         )
     }
 
