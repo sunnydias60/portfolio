@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cbf6ffd4.css",
-    "main.js": "/portfolio/static/js/main.ee3fb468.js",
+    "main.css": "/portfolio/static/css/main.db78bfbc.css",
+    "main.js": "/portfolio/static/js/main.0f90423b.js",
     "static/media/vhousing.PNG": "/portfolio/static/media/vhousing.25abd345c5f5732a2f20.PNG",
     "static/media/jsp.PNG": "/portfolio/static/media/jsp.e567d30d410efe750a9d.PNG",
     "static/media/journal.pdf": "/portfolio/static/media/journal.f49a0ff906b6149e113b.pdf",
     "static/media/finvine.PNG": "/portfolio/static/media/finvine.0a82b75d532a0c935d39.PNG",
-    "static/media/resume.pdf": "/portfolio/static/media/resume.35c9e18fdb32a9240a94.pdf",
-    "static/media/sunnydias.jpg": "/portfolio/static/media/sunnydias.bde875be40799ad31326.jpg",
+    "static/media/sunnydias.jpeg": "/portfolio/static/media/sunnydias.11cbbd225d033e332a0b.jpeg",
     "static/media/forest.png": "/portfolio/static/media/forest.50637ec0bde10f3bbfed.png",
+    "static/media/resume.pdf": "/portfolio/static/media/resume.f4208e5dfe654204daf5.pdf",
     "static/media/10x.jpg": "/portfolio/static/media/10x.7aa1039103d0e9642366.jpg",
     "static/media/appreciation.pdf": "/portfolio/static/media/appreciation.a6d7aea4f699f2018535.pdf",
     "static/media/az-104.png": "/portfolio/static/media/az-104.84267b6716d879cdad28.png",
     "static/media/az-900.png": "/portfolio/static/media/az-900.dd49b3c54249c87368c6.png",
     "static/media/gcp.png": "/portfolio/static/media/gcp.fcf505213a8be4034c9f.png",
     "index.html": "/portfolio/index.html",
-    "main.cbf6ffd4.css.map": "/portfolio/static/css/main.cbf6ffd4.css.map",
-    "main.ee3fb468.js.map": "/portfolio/static/js/main.ee3fb468.js.map"
+    "main.db78bfbc.css.map": "/portfolio/static/css/main.db78bfbc.css.map",
+    "main.0f90423b.js.map": "/portfolio/static/js/main.0f90423b.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbf6ffd4.css",
-    "static/js/main.ee3fb468.js"
+    "static/css/main.db78bfbc.css",
+    "static/js/main.0f90423b.js"
   ]
 }
