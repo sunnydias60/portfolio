@@ -33,8 +33,8 @@ export const Achievement = () => {
                 <div className="achievement__certification">
                     <h3>Certifications</h3>
                     <div className='certification__content'>
-                        <Card type="four" heading="AZ-900" image={AZ900} button_text="Verify" link="https://www.credly.com/badges/a6086fab-81eb-4d5c-9ee2-ff02cbdc3f23" />
-                        <Card type="four" heading="AZ-104" image={AZ104} button_text="Verify" link="https://www.credly.com/badges/3fc05b6f-de3d-46c1-b017-1cd73b69e2c0" />
+                        <Card type="four" heading="AZ-900" image={AZ900} button_text="Verify" link="https://learn.microsoft.com/api/credentials/share/en-us/SunnyDias-9721/F4141195352D4C6?sharingId=C8676F5B8659141C" />
+                        <Card type="four" heading="AZ-104" image={AZ104} button_text="Verify" link="https://learn.microsoft.com/api/credentials/share/en-us/SunnyDias-9721/52386761968C010F?sharingId=C8676F5B8659141C" />
                     </div>
                 </div>
 

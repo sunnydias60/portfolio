@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import PIC from '../../assets/sunnydias.jpg'
+import PIC from '../../assets/sunnydias.jpeg'
 import HeaderSocials from './HeaderSocials'
 import LOGO from '../../assets/sd601.png'
 import ParticlesBg from 'particles-bg'
@@ -35,7 +35,7 @@ const Header = () => {
         </div>
         <HeaderSocials />
         <div className="me">
-          {/* <img className='me__image' src={PIC} alt="" /> */}
+          <img className='me__image' src={PIC} alt="" />
         </div>
         <a href="#contact" className='scroll__down'>Scroll Down</a>
       </div>

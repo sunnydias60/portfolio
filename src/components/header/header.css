@@ -58,7 +58,8 @@ h4 {
 /* ME */
 
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
+    /* background: linear-gradient(var(--color-primary), transparent); */
+    background-color: black;
     width: 20rem;
     height: 30rem;
     position: absolute;
@@ -66,7 +67,7 @@ h4 {
     margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 1rem 1rem 0rem 1rem;
 }
 
 .me__image {
