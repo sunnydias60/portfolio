@@ -331,7 +331,8 @@
 
     .card__three-head {
         padding: 0.3rem;
-        border-radius: 0 0 1rem 1rem;
+        /* border-radius: 0 0 1rem 1rem; */
+        margin: -1px;
 
     }
 

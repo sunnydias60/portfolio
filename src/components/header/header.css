@@ -59,7 +59,7 @@ h4 {
 
 .me {
     /* background: linear-gradient(var(--color-primary), transparent); */
-    background-color: black;
+    /* background-color: black;
     width: 20rem;
     height: 30rem;
     position: absolute;
@@ -67,7 +67,18 @@ h4 {
     margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 1rem 0rem 1rem; */
+
+    background-color: black;
+    width: 20rem;
+    height: 30rem;
+    position: absolute; /* Changes from fixed to absolute */
+    bottom: -10rem; /* 2rem above the bottom of the containing block */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 1rem;
 }
 
 .me__image {
@@ -92,17 +103,26 @@ h4 {
         height: 68vh;
     }
 
-    .me {
+    /* .me {
         background: linear-gradient(var(--color-primary), transparent);
+        background: black;
         width: 20rem;
         height: 30rem;
         position: absolute;
-        left: calc(50% - 10rem);
-        margin-top: 8rem;
+        left: calc(50%);
+        margin-top: 5rem;
         border-radius: 12rem 12rem 0 0;
         overflow: hidden;
-        padding: 2rem;
+        padding: 1rem;
+    } */
+
+    .me {
+        bottom: -5rem; /* Adjust bottom spacing for tablets */
+        width: 18rem; /* Slightly smaller width for tablets */
+        height: 28rem; /* Slightly smaller height for tablets */
+        left: calc(50%);
     }
+
 
     .particles-bg-canvas-self {
         height: 68vh !important;
@@ -146,12 +166,19 @@ h4 {
         margin-right: auto;
     }
 
-    .me {
+    /* .me {
         width: 20rem;
         left: calc(50% - 10rem);
         height: 40rem;
         margin-top: 10rem;
         padding: 2rem;
+        bottom: 0.5rem;
+    } */
+
+    .me {
+        bottom: 1.5rem; /* Adjust bottom spacing for mobile */
+        width: 16rem; /* Smaller width for mobile */
+        height: 26rem; /* Smaller height for mobile */
     }
 
     .particles-bg-canvas-self {
@@ -166,13 +193,17 @@ h4 {
         height: 100vh;
     }
 
-    .me {
+    /* .me {
         margin-top: 5rem;
         padding: 2rem;
         width: 18rem;
         left: calc(50% - 9rem);
         height: 40rem;
         padding: 2rem;
+    } */
+
+    .me {
+        height: 24rem; /* Adjust height for shorter devices */
     }
 
     .logo {
@@ -191,13 +222,17 @@ h4 {
         height: 100vh;
     }
 
-    .me {
+    /* .me {
         margin-top: 4rem;
         padding: 2rem;
         width: 18rem;
         left: calc(50% - 9rem);
         height: 40rem;
         padding: 2rem;
+    } */
+
+    .me {
+        height: 24rem; /* Adjust height for shorter devices */
     }
 
     .logo {

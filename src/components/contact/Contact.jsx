@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './contact.css'
 import { MdOutlineEmail } from 'react-icons/md'
 import { BsTelephone } from 'react-icons/bs'
@@ -9,11 +9,23 @@ import emailjs from 'emailjs-com'
 const Contact = () => {
   // emailjs
   const form = useRef();
+  const [messageSent, setMessageSent] = useState(false); 
 
   const sendEmail = (e) => {
+    
     e.preventDefault();
 
-    emailjs.sendForm('service_yj1jelu', 'template_3zdmt3k', form.current, '6KOFIU5DKJyZyFJ_1')
+    emailjs.sendForm('service_l2zt8u5', 'template_3zdmt3k', form.current, '6KOFIU5DKJyZyFJ_1')
+    .then(
+      (result) => {
+          console.log(result.text); // Log success
+          setMessageSent(true);    // Set success state
+          setTimeout(() => setMessageSent(false), 3000); // Hide after 3 seconds
+      },
+      (error) => {
+          console.error(error.text); // Handle errors
+      }
+  );
     e.target.reset();
   };
   // emailjs 
@@ -48,8 +60,19 @@ const Contact = () => {
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name="email" placeholder='Your Email' required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className="btn btn-primary">Send Message</button>
+          <div className='submit-message'>
+            <button type='submit' className="btn btn-primary submit">Send Message</button>
+            {/* Display success message */}
+            {messageSent && (
+              <div className="btn btn-primary message-sent">
+                  Message sent successfully!
+              </div>
+            )}
+          </div>
+          
         </form>
+
+        
       </div>
     </section>
   )

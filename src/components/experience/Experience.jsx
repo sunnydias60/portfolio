@@ -20,7 +20,7 @@ const intership = [
     company: 'RC Diamonds',
     location: 'Rajkot, Gujarat',
     points_items: [
-      "Tasked with working on service oriented businesses such as LeadGenPro.club, Youthmonk.com and CorporateTrainers.club as well as developing various single-page and multi-page websites",
+      "Tasked with working on service oriented businesses as well as developing various single-page and multi-page websites",
       "Worked on Bootstrap, React Js for frontend, PHP, SQL for backend, Wordpress for websites and Postman for API testing.",
       "Worked with 3 teams on 5 projects and awarded as 'RC Diamonds Outstanding Performer at Web Development Internship Programme'"
     ]

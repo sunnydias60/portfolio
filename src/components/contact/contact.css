@@ -85,12 +85,51 @@ textarea {
     font-size: 1rem;
 }
 
+.submit-message {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.message-sent {
+    background-color: #4caf50 !important;
+    border-color: #4caf50 !important;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem; 
+    margin-left: -1.8rem;  
+}
+
 /* medium devices */
 
 @media screen and (max-width: 1024px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .submit-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+    
+    .submit {
+        width: auto;
+        text-align: center;
+    }
+
+    .message-sent {
+        width: auto;
+        text-align: center;
+        background-color: #28a745;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        margin-left: 0rem;  
     }
 }
 
@@ -99,5 +138,30 @@ textarea {
 @media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
+    }
+
+    .submit-message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin: 2rem 0;
+        
+    }
+    
+    .submit {
+        width: auto;
+        text-align: center;
+    }
+
+    .message-sent {
+        width: auto;
+        text-align: center;
+        background-color: #28a745;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        margin-left: 0rem;
     }
 }

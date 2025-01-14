@@ -32,7 +32,7 @@ const About = () => {
             <h3>Other Activities</h3>
             <div className="about__cards">
               <Card type="one" icon={MdSportsCricket} heading="Sports" points_items={["Cricket", "Chess", "Puzzle"]} />
-              <Card type="one" icon={SiGumtree} heading="Social Work" points_items={["NSS member", "Orientation Volunteer"]} />
+              <Card type="one" icon={SiGumtree} heading="Social Work" points_items={["NSS Member", "Orientation Volunteer"]} />
             </div>
           </div>
         </div>
@@ -48,8 +48,8 @@ const About = () => {
         <div className="other__activities-mobile">
           <h3>Other Activities</h3>
           <div className="about__cards">
-            <Card type="one" icon={MdSportsCricket} heading="Sports" points_items={["Cricket", "Chess", "Volleyball", "Puzzle"]} />
-            <Card type="one" icon={SiGumtree} heading="Social Work" points_items={["NSS (National Service Scheme) member for 2 years.", "Beach clean up"]} />
+            <Card type="one" icon={MdSportsCricket} heading="Sports" points_items={["Cricket", "Chess", "Puzzle"]} />
+            <Card type="one" icon={SiGumtree} heading="Social Work" points_items={["NSS Member", "Orientation Volunteer"]} />
           </div>
         </div>
       </div>
