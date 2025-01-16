@@ -22,18 +22,18 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.instagram.com/sunny__dias/" target="_blank"><GrInstagram /></a>
+        <a href="https://www.instagram.com/sunnydias60/" target="_blank"><GrInstagram /></a>
         <a href="https://github.com/sunnydias60" target="_blank"><BsGithub /></a>
         <a href="https://www.linkedin.com/in/sunny-dias-94554b160" target="_blank"><BsLinkedin /></a>
       </div>
 
       <div className="footer__copyright">
-        <small>Inspired by Egator | Made with &hearts; in India | &copy; 2022 Sunydias60 | All Rights Reserved</small>
+        <small>Inspired by Egator | Made with &hearts; in India | &copy; 2025 Sunydias60 | All Rights Reserved</small>
       </div>
       <div className="footer__copyright-mobile">
         <small>Inspired by Egator | Made with &hearts; in India</small>
         <br />
-        <small>&copy; 2022 Sunnydias60 | All Rights Reserved</small>
+        <small>&copy; 2025 Sunnydias60 | All Rights Reserved</small>
       </div>
     </footer>
   )
